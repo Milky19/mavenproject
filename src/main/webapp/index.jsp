@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME-PAGE</title>
+    <title>HOME - KRISHNA DEVOPS</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ff69b4; 
+            background-color: #cce7ff; /* Light blue background */
             margin: 0;
             padding: 0;
         }
@@ -16,31 +16,39 @@
             margin-top: 100px;
         }
         h1 {
-            color: #0073e6;
+            color: #003366;
+            font-size: 2.2em;
         }
         ul {
             list-style-type: none;
             padding: 0;
+            margin-top: 30px;
         }
         li {
             margin: 10px 0;
+            font-size: 1.1em;
+            color: #333;
         }
-        strong {
+        marquee {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px 0;
+            font-size: 1.5em;
             font-weight: bold;
+            letter-spacing: 1px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <marquee behavior="scroll" direction="left" scrollamount="4">
-            <h1>WELCOME TO PYTHONLIFE JENKINS</h1>
-        </marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="5">
+             WELCOME TO KRISHNA DEVOPS         </marquee>
         <ul>
-            <li><strong>Learn DevOps Methodologies and Culture </strong></li>
-            <li><strong>Master the art of automation and continuous integration</strong></li>
-            <li><strong>Gain hands-on experience with industry-standard tools</strong></li>
-            <li><strong>Join withus and thanks for choosing devops course</strong></li>
-            <li><b> @@@@@Learn here and Lead anywhere@@@@@@@</b></li>
+            <li><strong>Learn DevOps Methodologies and Culture</strong></li>
+            <li><strong>Master the art of Automation & Continuous Integration</strong></li>
+            <li><strong>Gain Hands-on Experience with Industry Tools</strong></li>
+            <li><strong>Join us and thank you for choosing DevOps!</strong></li>
+            <li><b>Learn Here Lead Anywhere </b></li>
         </ul>
     </div>
 </body>
