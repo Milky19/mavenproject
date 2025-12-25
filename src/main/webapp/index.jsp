@@ -42,7 +42,7 @@
 <body>
     <div class="container">
         <marquee behavior="scroll" direction="left" scrollamount="5">
-             WELCOME TO KRISHNA DEVOPS         </marquee>
+             WELCOME TO KRISHNA DEVOPS TRAINING        </marquee>
         <ul>
             <li><strong>Learn here and Lead any where</strong></li>
             <li><strong>Master the art of Automation & Continuous Integration</strong></li>
