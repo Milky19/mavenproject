@@ -42,7 +42,7 @@
 <body>
     <div class="container">
         <marquee behavior="scroll" direction="left" scrollamount="5">
-             WELCOME TO KRISHNA DEVSECOPS WITH AWS AND AI &&& PYTHON </marquee>
+             WELCOME TO KRISHNA DEVSECOPS WITH PYTHON and MLOPS and AIOPS </marquee>
         <ul>
             <li><strong>Learn here and Lead any where</strong></li>
             <li><strong>Master the art of Automation & Continuous Integration</strong></li>
