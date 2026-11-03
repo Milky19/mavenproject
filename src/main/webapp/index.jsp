@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna DevOps | Learn Here. Lead Anywhere.</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 <header class="site-header">
@@ -49,27 +49,27 @@
         </div>
         <div class="course-grid">
             <button class="course-card" data-course="devops">
-                <span class="course-icon">01</span><span class="course-name">DevOps Engineering</span>
+                <span class="course-icon">D</span><span class="course-name">DevOps Engineering</span>
                 <span class="course-description">Automate software delivery, infrastructure and operations.</span><span class="card-link">Explore syllabus <b>></b></span>
             </button>
             <button class="course-card" data-course="devsecops">
-                <span class="course-icon">02</span><span class="course-name">DevSecOps</span>
+                <span class="course-icon">DS</span><span class="course-name">DevSecOps</span>
                 <span class="course-description">Bring security into every stage of the delivery pipeline.</span><span class="card-link">Explore syllabus <b>></b></span>
             </button>
             <button class="course-card" data-course="cloud">
-                <span class="course-icon">03</span><span class="course-name">Multi-Cloud Engineering</span>
+                <span class="course-icon">MC</span><span class="course-name">Multi-Cloud Engineering</span>
                 <span class="course-description">Design and operate services across leading cloud platforms.</span><span class="card-link">Explore syllabus <b>></b></span>
             </button>
             <button class="course-card" data-course="mlops">
-                <span class="course-icon">04</span><span class="course-name">MLOps Engineering</span>
+                <span class="course-icon">ML</span><span class="course-name">MLOps Engineering</span>
                 <span class="course-description">Manage the lifecycle of machine-learning applications.</span><span class="card-link">Explore syllabus <b>></b></span>
             </button>
             <button class="course-card" data-course="aiops">
-                <span class="course-icon">05</span><span class="course-name">AIOps Engineering</span>
+                <span class="course-icon">AI</span><span class="course-name">AIOps Engineering</span>
                 <span class="course-description">Use intelligent analytics to improve IT operations.</span><span class="card-link">Explore syllabus <b>></b></span>
             </button>
             <button class="course-card" data-course="genai">
-                <span class="course-icon">06</span><span class="course-name">Generative AI</span>
+                <span class="course-icon">GA</span><span class="course-name">Generative AI</span>
                 <span class="course-description">Create LLM-powered applications, agents and RAG systems.</span><span class="card-link">Explore syllabus <b>></b></span>
             </button>
         </div>
@@ -111,6 +111,6 @@
         <span aria-hidden="true"> LEARN HERE <b>|</b> LEAD ANYWHERE &nbsp; | &nbsp; KRISHNA DEVOPS &nbsp; | &nbsp; DEVOPS &nbsp; | &nbsp; DEVSECOPS &nbsp; | &nbsp; MULTI-CLOUD &nbsp; | &nbsp; MLOPS &nbsp; | &nbsp; AIOPS &nbsp; | &nbsp; GENERATIVE AI &nbsp; </span>
     </div>
 </div>
-<script src="index.js"></script>
+<script src="index.js?v=3"></script>
 </body>
 </html>
