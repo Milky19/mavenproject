@@ -28,3 +28,127 @@ a{color:inherit;text-decoration:none}
 @media(max-width:900px){.course-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:540px}.hero-stats{gap:28px}}
 @media(max-width:650px){.navbar{padding:14px 18px}.menu-toggle{display:block}.navbar{flex-wrap:wrap}.nav-links{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;padding:8px 0}.nav-links.open{display:flex}.nav-links li a{display:block;padding:12px}.nav-links .nav-cta{display:inline-block;margin:5px 12px}.hero{min-height:520px;padding:70px 18px}.hero h1{letter-spacing:-1px}.hero-copy{font-size:16px}.hero-stats{gap:18px}.hero-stats strong{font-size:16px}.hero-stats span{font-size:11px}.section{padding:60px 16px}.course-grid,.feature-grid,.details-columns{grid-template-columns:1fr}.course-card{min-height:205px}.course-details{padding:18px}.detail-panel{padding:17px}.details-top h3{font-size:24px}.marquee-track span{font-size:13px}.contact-section{padding:35px 16px 60px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee-track{animation:none}.course-card,.button{transition:none}}
+
+
+/* ===== Dynamic Light Theme Enhancements ===== */
+:root{
+  --accent-cyan:#0891b2;
+  --accent-blue:#2563eb;
+  --accent-violet:#7c3aed;
+  --surface-glass:rgba(255,255,255,.78);
+}
+body{
+  background:linear-gradient(120deg,#f4f9ff,#eef5ff,#f8f5ff,#eaf7ff);
+  background-size:300% 300%;
+  animation:pageGradient 18s ease infinite;
+  color:#14213d;
+}
+@keyframes pageGradient{
+  0%,100%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+.site-header{
+  box-shadow:0 8px 28px rgba(45,75,120,.08);
+  transition:background .3s ease,box-shadow .3s ease;
+}
+.brand{
+  text-shadow:0 0 18px rgba(8,145,178,.15);
+  transition:letter-spacing .25s ease;
+}
+.brand:hover{letter-spacing:1.2px}
+.nav-links a:not(.nav-cta){position:relative}
+.nav-links a:not(.nav-cta):after{
+  content:"";position:absolute;left:0;bottom:-5px;width:0;height:2px;
+  background:linear-gradient(90deg,var(--accent-cyan),var(--accent-violet));
+  transition:width .25s ease
+}
+.nav-links a:not(.nav-cta):hover:after{width:100%}
+.hero{
+  isolation:isolate;
+  background:
+    radial-gradient(circle at 12% 20%,rgba(56,189,248,.2),transparent 34%),
+    radial-gradient(circle at 88% 75%,rgba(139,92,246,.17),transparent 35%),
+    linear-gradient(135deg,#f8fbff,#eaf3ff 52%,#f4efff);
+}
+.hero:after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.5) 48%,transparent 70%);
+  transform:translateX(-100%);animation:heroShimmer 9s ease-in-out infinite
+}
+@keyframes heroShimmer{0%,35%{transform:translateX(-100%)}70%,100%{transform:translateX(100%)}}
+.hero h1 span{
+  background:linear-gradient(90deg,#0284c7,#4f46e5,#9333ea,#0284c7);
+  background-size:250% auto;background-clip:text;-webkit-background-clip:text;
+  color:transparent;animation:textGradient 7s linear infinite
+}
+@keyframes textGradient{to{background-position:250% center}}
+.hero-glow{animation:glowFloat 9s ease-in-out infinite alternate}
+.glow-two{animation-delay:-4s}
+@keyframes glowFloat{from{transform:translate(0,0) scale(.9)}to{transform:translate(35px,-25px) scale(1.12)}}
+.button{
+  position:relative;overflow:hidden;
+  box-shadow:0 5px 16px rgba(37,99,235,.12)
+}
+.button:after{
+  content:"";position:absolute;top:-50%;left:-75%;width:45%;height:200%;
+  transform:rotate(25deg);background:rgba(255,255,255,.35);
+  transition:left .55s ease
+}
+.button:hover:after{left:135%}
+.button-primary{background:linear-gradient(110deg,#0284c7,#4f46e5,#7c3aed);background-size:180% 180%;animation:buttonGradient 8s ease infinite}
+@keyframes buttonGradient{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+.course-card{
+  overflow:hidden;
+  box-shadow:0 8px 24px rgba(50,75,120,.06);
+  transition:transform .28s cubic-bezier(.2,.8,.2,1),box-shadow .28s ease,border-color .28s ease,background .28s ease
+}
+.course-card:before{
+  height:4px;left:0;right:0;
+  background:linear-gradient(90deg,#06b6d4,#3b82f6,#8b5cf6,#06b6d4);
+  background-size:220% 100%;animation:cardLine 5s linear infinite
+}
+@keyframes cardLine{to{background-position:220% 0}}
+.course-card:after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:0;
+  background:radial-gradient(circle at 20% 0%,rgba(56,189,248,.12),transparent 48%);
+  transition:opacity .25s ease
+}
+.course-card:hover:after,.course-card.selected:after{opacity:1}
+.course-card:hover,.course-card.selected{
+  transform:translateY(-8px) scale(1.012);
+  border-color:#7ab8ef;
+  box-shadow:0 20px 42px rgba(37,99,235,.14),0 0 0 1px rgba(96,165,250,.12)
+}
+.course-icon{
+  display:grid;place-items:center;width:56px;height:56px;border-radius:16px;
+  background:linear-gradient(135deg,#e0f2fe,#ede9fe);color:#1d4ed8;
+  font-size:24px;box-shadow:inset 0 0 0 1px rgba(59,130,246,.1);
+  transition:transform .28s ease,box-shadow .28s ease
+}
+.course-card:hover .course-icon,.course-card.selected .course-icon{
+  transform:rotate(-5deg) scale(1.08);
+  box-shadow:0 8px 20px rgba(59,130,246,.16)
+}
+.card-link b{display:inline-block;transition:transform .2s ease}
+.course-card:hover .card-link b{transform:translateX(5px)}
+.course-details{
+  animation:detailsIn .4s cubic-bezier(.2,.8,.2,1) both;
+  box-shadow:0 22px 55px rgba(37,99,235,.1)
+}
+@keyframes detailsIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.tool-badge{
+  transition:transform .2s ease,background .2s ease,box-shadow .2s ease
+}
+.tool-badge:hover{transform:translateY(-3px);background:#d8edff;box-shadow:0 5px 12px rgba(37,99,235,.1)}
+.feature-card{
+  transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease
+}
+.feature-card:hover{transform:translateY(-6px);border-color:#9cc9f0;box-shadow:0 16px 32px rgba(37,99,235,.1)}
+.feature-icon{transition:transform .25s ease}
+.feature-card:hover .feature-icon{transform:scale(1.12) rotate(-4deg)}
+.bottom-marquee{box-shadow:0 -5px 26px rgba(37,99,235,.2)}
+.bottom-marquee:hover{filter:saturate(1.12)}
+@media(prefers-reduced-motion:reduce){
+  body,.hero h1 span,.hero:after,.hero-glow,.button-primary,.course-card:before{animation:none!important}
+  .course-card,.button,.feature-card,.course-icon{transition:none!important}
+}
