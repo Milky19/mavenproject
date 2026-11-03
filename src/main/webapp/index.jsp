@@ -44,7 +44,7 @@
         <marquee behavior="scroll" direction="left" scrollamount="5">
              WELCOME TO KRISHNA DEVSECOPS WITH MULTI-CLOUD and MLOPS and AIOPS </marquee>
         <ul>
-            <li><strong>Learn here and Lead any where</strong></li>
+            <li>LERAN HERE AND LEAD ANYWHERE</strong></li>
             <li><strong>Master the art of Automation & Continuous Integration</strong></li>
             <li><strong>Gain Hands-on Experience with Industry Tools</strong></li>
             <li><strong>Join us and thank you for choosing DevOps!</strong></li>
