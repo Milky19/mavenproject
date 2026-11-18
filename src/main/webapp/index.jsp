@@ -16,7 +16,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#about">Why Us</a></li>
-            <li><a class="nav-cta" href="#contact">Join Now</a></li>
+            <li><a class="nav-cta" href="#contact">Join Here</a></li>
         </ul>
     </nav>
 </header>
