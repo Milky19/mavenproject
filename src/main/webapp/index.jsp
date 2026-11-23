@@ -10,13 +10,13 @@
 <body>
 <header class="site-header">
     <nav class="navbar">
-        <a class="brand" href="#home">KRISHNA <span>DEVOPS</span></a>
+        <a class="brand" href="#home">KRISHNA <span>DEVOPS-PYTHONLIFE</span></a>
         <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"></button>
         <ul class="nav-links" id="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#courses">Courses</a></li>
             <li><a href="#about">Why Us</a></li>
-            <li><a class="nav-cta" href="#contact">Join Here</a></li>
+            <li><a class="nav-cta" href="#contact">Join Us Today</a></li>
         </ul>
     </nav>
 </header>
